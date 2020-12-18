@@ -3,14 +3,8 @@
 
     <h1 class="textcenter">Currency Converter</h1>
     
-    <div class="linha">
-      <Conversor moeda-a="USD" moeda-b="BRL"/>
-      <Conversor moeda-a="BRL" moeda-b="USD"/>
-    </div>
-    <div class="linha">
-      <Conversor moeda-a="EUR" moeda-b="BRL"/>
-      <Conversor moeda-a="BRL" moeda-b="EUR"/>
-    </div>
+    <Conversor moeda-a="USD" moeda-b="EUR"/>
+   
 
 
   </div>
@@ -29,20 +23,15 @@ export default {
 <style>
 #app {
   margin: auto;
-  max-width: 500px;
+  max-width: 340px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
+  text-align: center;
   color: #2c3e50;
   margin-top: 50px;
 }
 
-.linha{
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-evenly;
-}
 .textcenter{
   text-align: center;
   text-shadow: 2px 5px 10px;
