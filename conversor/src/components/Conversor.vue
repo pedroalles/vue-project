@@ -7,7 +7,7 @@
         <input class="inputclass" type="text" v-model="moedaA_value" v-bind:placeholder="moedaA">
         
         <div class="btcenter">
-            <input type="button" value="Converter" v-on:click="converter">
+            <input type="button" value="Convert" v-on:click="converter">
         </div>
 
         <h2 >{{moedaB_value}}</h2>
@@ -52,9 +52,11 @@ export default {
 .conversor{
     padding: 10px;
     max-width: 160px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    border-radius:20px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.4);
+    border-radius:30px 10px 30px 10px;
     text-align: center;
+    background-color: #b6d40ba9;
+    border: 5px solid;
 }
 .btcenter{
     /* text-align: center; */
