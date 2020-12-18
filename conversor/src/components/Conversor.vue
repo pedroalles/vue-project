@@ -35,7 +35,6 @@ export default {
             moedaA_value : "",
             moedaB_value : "",
             result : 0,
-            valA : 0,
             currencys: ['BRL', 'CAD','CHF', 'EUR','GBP', 'JPY','NZD', 'USD', 'UYU']
         };
     },
@@ -49,16 +48,12 @@ export default {
             let apikey = "1feee5522525b5536695"
             let url = "https://free.currconv.com/api/v7/convert?q=" + de_para + "&compact=ultra&apiKey=" + apikey
             
-
             fetch(url).then(res=>{return res.json();})
                       .then(json=>{
                           console.log(json);
                           let cotacao = json[de_para];
                           this.result = (cotacao * parseFloat(this.moedaA_value)).toFixed(2);
                       })
-        
-            
-            this.resertInput();
         }
     }
 };
